@@ -57,12 +57,12 @@
                 <!--slide 1 0f 6-->
                 <div class="mySlides fade">
                     <img class="Slideshow_Images"
-                    src="insert pic here" alt="pic of me">
+                    src="./img/1022.jpg" alt="pic of me">
                     <div class="text">I'm available to assist you on your project!</div>
                 </div>
                 <!--slide 2 0f 6-->
                 <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="logo pic" alt="HTML, CSS, and Java logos">
+                    <img class="Slideshow_Images" src="./img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and Java logos">
                     <div class="text">I am a full-stack software developer,<br> trained in:<br>
                         HTML, CSS, JavaScript.
                     </div>
@@ -70,31 +70,25 @@
                 <!--slide 3 of 6-->
                 <div class="mySlides fade">
                     <img class="Slideshow_Images"
-                    src="python pic" alt="Python logo">
+                    src="./img/Python.png" alt="Python logo">
                     <div class="text">The popular programming language Python,</div>
                 </div>
                 <!--slide 4 of 6-->
                 <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="C sharp and dot" alt="C# logo">
+                    <img class="Slideshow_Images" src="./img/C_Sharp_and_Dot_NET.png" alt="C# logo">
                     <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
                 </div>
                 <!--slide 5 of 6-->
                 <div class="mySlides fade">
                     <img class="Slideshow_Images" 
-                    src="sql thing" alt="sql logo">
+                    src="./img/SQL_and_Database.jpg" alt="sql logo">
                     <div class="text">back end development, databases and SQL</div>
-                </div>
-                <!--slide 6 of 6-->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images"
-                    src="pic of me" alt="pic of me">
-                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact Me now!</a></div>
                 </div>
                 <!--next and previous buttons-->
                 <a class="Previous"
                 onclick="plusSlides(-1)">&#10094;</a>
                 <a class="Next"
-            onclick="plusSlides(1)">&#10094;</a></div>
+            onclick="plusSlides(1)">&#10095;</a></div>
             <br> <!--adds a space between the slideshow images and the dots-->
             <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
             <div style="text-align: center">
@@ -113,16 +107,22 @@
 
 <!--FIRST COLUMN-->
 
-    <div class="row" id="About">
-        <!--Left column-->
-        <div class="column-2">
-           <img src="./img/computer.jpeg" alt="computer"> 
+    <!-- About section -->
+    <div class="Row" id="About">
+        <!-- Left column -->
+        <div class="Column_2">
+            <img src="./img/computer.jpeg" alt="Picture of computer">
         </div>
-        <div class="right-column">
-            <div class="column-1">
-            <h1>About me</h1>
-            <p>I am fresh graduate from <a href="https://learncodinganywhere.com" target="_blank">The Tech Academy</a>, a online coding boot camp.<br>I am familiar with HTML, Javascript, CSS, Bootstrap and much more.<br> I am a full stack developer now and can work alongside you on your projects.<br> <a href="#Contact">Contact</a> me below!</p>
-        </div>
+        <!-- Right column -->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a software developer fresh in the industry who is ready to work with others to create something! 
+                <br>
+                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. 
+                <br>
+                <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()" class="contact">Contact</a> me below!
+            </p>
         </div>
     </div>
 
@@ -130,15 +130,17 @@
 
     <div class="row" id="GitHub">
         <!--Left column-->
-        <div class="column-1">
-            <h1>GitHub</h1>
-            <p>You can view my other projects besides this one on my GitHub profile here:<br>
-            <p class="center"><a href="https://github.com/LukeSometimesCodes" target="_blank">Luke Morreale GitHub</a></p>
-        </div>
-        <!--Right Column-->
-        <div class="column-2">
-            <a href="https://github.com/LukeSometimesCodes" target="_blank"><img src="./img/GitHub-logo.png"></a>
-        </div>
+       <div class="Column_1">
+        <h1>GitHub</h1>
+        <p>You can view my other coding projects on my GitHub profile here:</p>
+        <br>
+        <p class="center"><a href="https://github.com/LukeSometimesCodes" 
+            target="_blank">Luke Morreale GitHub</a></p>
+       </div>
+       <!--right column-->
+       <div class="Column_2">
+        <a href="https://github.com/LukeSometimesCodes" target="_blank"><img src="./img/GitHub-logo.png"></a>
+       </div>
     </div>
     <!--END SECOND COLUMN-->
 
@@ -166,12 +168,11 @@
     </body>
 
      <!--Footer section-->
+     <!-- Footer section -->
      <footer>
-        <p>
-            <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-            <br>
-        </p>
-    </footer>
+        <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p><br>
+     </footer>
+<script src="JS/sample_portfolio.js"></script>
     <script src="./final.js"></script>
 </body>
 </html>
