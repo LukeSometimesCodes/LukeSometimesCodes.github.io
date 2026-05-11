@@ -26,7 +26,7 @@ function showSlides(n) {
     var slides = document.getElementsByClassName('mySlides');
     //this takes all the elements with the class name 'myslides' and
     //stores them in the variable array 'slides'
-    var dots= document.getElementsByClassName('dots');
+    var dots= document.getElementsByClassName('dot');
     //this takes all the elements with the class name 'dots' and stores them in the array 'dots'
     if (n > slides.length) {slideIndex = 1}; 
     //if n (the number passed into the function) is greater than the length of the array 'slides', the slides index is set to one
@@ -50,3 +50,56 @@ function showSlides(n) {
     }
     }, false )
 
+// PROJECT SLIDESHOW
+
+var projectSlideIndex = 1;
+showProjectSlides(projectSlideIndex);
+
+// NEXT / PREVIOUS CONTROLS
+function plusProjectSlides(n) {
+    showProjectSlides(projectSlideIndex += n);
+}
+
+// DOT CONTROLS
+function currentProjectSlide(n) {
+    showProjectSlides(projectSlideIndex = n);
+}
+
+// SHOW SLIDES
+function showProjectSlides(n) {
+
+    var slides =
+    document.getElementsByClassName("projectSlides");
+
+    var dots =
+    document.getElementsByClassName("projectDot");
+
+    // LOOP BACK TO START
+    if (n > slides.length) {
+        projectSlideIndex = 1;
+    }
+
+    // LOOP TO END
+    if (n < 1) {
+        projectSlideIndex = slides.length;
+    }
+
+    // HIDE ALL SLIDES
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // REMOVE ACTIVE DOT
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className =
+        dots[i].className.replace(" active", "");
+    }
+
+    // SHOW CURRENT SLIDE
+    slides[projectSlideIndex - 1].style.display =
+    "block";
+
+    // ACTIVATE CURRENT DOT
+    dots[projectSlideIndex - 1].className +=
+    " active";
+}

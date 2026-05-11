@@ -43,8 +43,7 @@
     <h1 class="white-text">Luke Morreale's Portfolio</h1>
     <strong>
         <p class="center">
-            <q>How big would you dream, if you knew you couldn't fail?</q>
-            <br>I am Luke Morreale, welcome to my website. Browse around to see my background and experience.
+            <br>My name is Luke Morreale, welcome to my website. Browse around to see my background and more about me.
             <br>Thank you for stopping by!
         </p>
     </strong>
@@ -105,6 +104,25 @@
 
 <!--END JUMBOTRON-->
 
+<!-- REAL FIRST COLUMN-->
+
+    <!-- About section -->
+    <div class="row" id="GitHub">
+        <!--Left column-->
+       <div class="Column_1">
+        <h1>Background</h1>
+        <p>
+                I am a software developer fresh in the industry who is ready to work with others to create something! 
+                <br>
+                <br> I have my Associate's Degree in Software Development from <a href="https://cwi.edu/" target="_blank">The College of Western Idaho</a>, where both front and back end development is studied extensively. 
+            </p>
+       </div>
+       <!--right column-->
+       <div class="Column_2">
+        <a href="https://cwi.edu/" target="_blank"><img src="./img/CWI.jpg"></a>
+       </div>
+    </div>
+
 <!--FIRST COLUMN-->
 
     <!-- About section -->
@@ -116,19 +134,108 @@
         <!-- Right column -->
         <div class="Column_1">
             <h1>About</h1>
-            <p>
-                I am a software developer fresh in the industry who is ready to work with others to create something! 
+            <p> 
                 <br>
-                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. 
+                <br>I am a also a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. 
                 <br>
                 <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()" class="contact">Contact</a> me below!
             </p>
         </div>
     </div>
 
+    <!-- REAL FIRST COLUMN-->
+
+    <!-- About section -->
+    <!-- PROJECTS SECTION -->
+<div class="Row" id="Projects">
+
+    <!-- LEFT COLUMN -->
+    <div class="Column_1">
+        <h1>Projects</h1>
+
+        <p>
+            Here are a few of the projects I have worked on.
+            Click through the gallery to explore my work and visit the live projects or repositories.
+        </p>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="Column_2">
+
+        <!-- PROJECT SLIDESHOW -->
+        <div id="Project_Container">
+
+            <!-- PROJECT 1 -->
+            <div class="projectSlides fade">
+
+                <a href="PASTE_LINK_HERE"
+                target="_blank">
+
+                    <img class="Project_Images"
+                    src="./img/computer.jpeg"
+                    alt="Project 1">
+
+                </a>
+
+                <div class="text">
+                    Project Title 1
+                </div>
+
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="projectSlides fade">
+
+                <a href="PASTE_LINK_HERE"
+                target="_blank">
+
+                    <img class="Project_Images"
+                    src="./img/CWI.jpg"
+                    alt="Project 2">
+
+                </a>
+
+                <div class="text">
+                    Project Title 2
+                </div>
+
+            </div>
+
+            <!-- PREVIOUS BUTTON -->
+            <a class="Previous"
+            onclick="plusProjectSlides(-1)">&#10094;</a>
+
+            <!-- NEXT BUTTON -->
+            <a class="Next"
+            onclick="plusProjectSlides(1)">&#10095;</a>
+
+        </div>
+
+        <br>
+
+        <!-- DOTS -->
+        <div style="text-align:center">
+
+            <span class="projectDot"
+            onclick="currentProjectSlide(1)"></span>
+
+            <span class="projectDot"
+            onclick="currentProjectSlide(2)"></span>
+
+        </div>
+
+    </div>
+</div>
+
     <!--SECOND COLUMN-->
 
     <div class="row" id="GitHub">
+
+        <!--right column-->
+       <div class="Column_2">
+        <a href="https://github.com/LukeSometimesCodes" target="_blank"><img src="./img/GitHub-logo.png"></a>
+       </div>
+    </div>
         <!--Left column-->
        <div class="Column_1">
         <h1>GitHub</h1>
@@ -141,11 +248,7 @@
         <p class="center"><a href="https://www.linkedin.com/in/luke-morreale/" 
             target="_blank">LinkedIn page</a></p>
        </div>
-       <!--right column-->
-       <div class="Column_2">
-        <a href="https://github.com/LukeSometimesCodes" target="_blank"><img src="./img/GitHub-logo.png"></a>
-       </div>
-    </div>
+       
     <!--END SECOND COLUMN-->
 
     <!--THIRD COLUMN-->
